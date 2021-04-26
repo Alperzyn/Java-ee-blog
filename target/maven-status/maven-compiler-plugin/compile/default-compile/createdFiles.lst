@@ -1,0 +1,6 @@
+com\hamit\dto\RegisterDto.class
+com\hamit\controller\StudentController.class
+com\hamit\hibernateutils\PersistenceUtil.class
+com\hamit\interfaces\IDatabaseCrud.class
+com\hamit\entity\Register.class
+com\hamit\hibernateutils\HibernateUtils.class
