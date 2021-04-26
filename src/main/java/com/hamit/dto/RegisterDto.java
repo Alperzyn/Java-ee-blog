@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RegisterDto {
-	// Repository https://github.com/hamitmizrak/BlogProject.git
+	//Repository https://github.com/hamitmizrak/Java-ee-blog.git
 	private long id;
 
 }
