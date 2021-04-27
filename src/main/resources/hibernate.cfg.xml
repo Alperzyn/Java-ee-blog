@@ -26,7 +26,7 @@
 		<!--Database kontrolu -->
 		<property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>
 		<property name="hibernate.c3p0.min_size">1</property>
-		<property name="hibernate.c3p0.max_size">40</property>
+		<property name="hibernate.c3p0.max_size">40</property> 
 		<property name="hibernate.c3p0.acquire_increment">1</property>
 		<property name="hibernate.c3p0.timeout">1</property>
 		<property name="hibernate.c3p0.max_statements">0</property>
