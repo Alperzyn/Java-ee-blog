@@ -13,6 +13,8 @@ public class HibernateUtils {
 	private static SessionFactory sessionFactoryHibernate() {
 		try {
 			Configuration configuration = new Configuration();
+			
+			//Yeni Entity Classlarýný buraya ekliyoruz.
 			configuration.addAnnotatedClass(Register.class);
 
 			SessionFactory sessionFactory = configuration.configure("hibernate.cfg.xml").buildSessionFactory();
