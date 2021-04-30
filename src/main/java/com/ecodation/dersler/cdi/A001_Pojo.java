@@ -1,4 +1,4 @@
-package com.ecodation.dersler;
+package com.ecodation.dersler.cdi;
 
 
 public class A001_Pojo {

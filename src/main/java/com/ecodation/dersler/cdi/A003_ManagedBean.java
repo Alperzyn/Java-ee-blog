@@ -1,4 +1,4 @@
-package com.ecodation.dersler;
+package com.ecodation.dersler.cdi;
 
 import java.io.Serializable;
 import java.util.Objects;
