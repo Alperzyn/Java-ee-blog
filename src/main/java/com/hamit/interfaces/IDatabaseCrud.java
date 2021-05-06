@@ -13,7 +13,7 @@ public interface IDatabaseCrud<T> {
 	public void delete(Long id);
 
 	public void update(T t, Long id);
-
+ 
 	default T find(Long id) {
 		return null;
 	}
