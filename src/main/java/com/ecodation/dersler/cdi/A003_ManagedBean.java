@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.Objects;
 
 
-@ManagedBean(name = "helloWorld", eager = true)
-@RequestScoped
+//@ManagedBean(name = "helloWorld", eager = true)
+//@RequestScoped
 public class A003_ManagedBean implements Serializable {
 	private static final long serialVersionUID = 2229563708060150583L;
 	
