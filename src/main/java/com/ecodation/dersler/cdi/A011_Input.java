@@ -1,6 +1,8 @@
 package com.ecodation.dersler.cdi;
 
 import javax.enterprise.context.ApplicationScoped;
+import javax.faces.application.FacesMessage;
+import javax.faces.context.FacesContext;
 import javax.inject.Named;
 
 import lombok.AllArgsConstructor;
@@ -29,6 +31,13 @@ public class A011_Input {
 		System.out.println(this.id + " " + this.name + " " + this.surname + " " + this.password);
 		log.info(this.id + " " + this.name + " " + this.surname + " " + this.password);
 		log.warning(this.id + " " + this.name + " " + this.surname + " " + this.password);
+
+		FacesMessage facesMessage = new FacesMessage(FacesMessage.SEVERITY_INFO, "body alaný", "header alaný");
+		FacesContext.getCurrentInstance().addMessage(null, facesMessage);
+
+		FacesContext.getCurrentInstance().addMessage(null,
+				new FacesMessage(FacesMessage.SEVERITY_ERROR, "Body", "Baþlýk"));
+
 		return "Ders_008_Input.xhtml?faces-redirect=true";
 	}
 

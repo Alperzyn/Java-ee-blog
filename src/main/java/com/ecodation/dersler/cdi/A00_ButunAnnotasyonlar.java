@@ -20,6 +20,6 @@ import javax.inject.Named;
 @Named
 @ApplicationScoped
 
-public @interface ButunAnnotasyonlar {
+public @interface A00_ButunAnnotasyonlar {
 
 }

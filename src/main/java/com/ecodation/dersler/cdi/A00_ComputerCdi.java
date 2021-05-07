@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Named (value = "computer") //cdi bean 
 @ApplicationScoped  //kapsam
 @Data @AllArgsConstructor @NoArgsConstructor  //bean constructor+ getter +setter+toString+equals
-public class ComputerCdi  implements Serializable{
+public class A00_ComputerCdi  implements Serializable{
 	private static final long serialVersionUID = -4988925368416592924L;
 	
 	private long computerId=0;

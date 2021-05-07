@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ButunAnnotasyonlar
+@A00_ButunAnnotasyonlar
 public class A009_CommonScoped {
 	private long id;
 	private String name;
