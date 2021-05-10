@@ -3,6 +3,26 @@
 
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--   <link rel="stylesheet" href="css/all.css" /> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/resources/css/style.css">
+
+    <!-- External JS -->
+    <script src="/js/main.js"></script>
+
+
 <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
 <title>Infinity</title>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
@@ -34,7 +54,15 @@
 <link href='css/font-awesome.min.css' rel='stylesheet'/>
 <link href='fonts/remixicon.css' rel='stylesheet'/>
 <!-- Template Style CSS -->
-<style id='page-skin-1' type='text/css'><!--
+<style id='page-skin-1' type='text/css'>
+
+
+
+
+  
+
+
+<!--
 /*
 -----------------------------------------------
 Blogger Template Style
@@ -3880,6 +3908,8 @@ Menu
 <li><a href='#main-wrapper'>Blog</a></li>
 <li><a href='#editorial-wrap'>Team</a></li>
 <li><a href='#footer-wrapper'>Contact Us</a></li>
+<li> <button class="btn btn-primary btn-sm" id="register-login"><i
+                                class="fas fa-user-lock"></i></button></li>
 </ul>
 </div>
 </div></div>
@@ -5081,7 +5111,49 @@ _WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'co
 _WidgetManager._RegisterWidget('_ContactFormView', new _WidgetInfo('ContactForm1', 'contact-right', document.getElementById('ContactForm1'), {'contactFormMessageSendingMsg': 'Sending...', 'contactFormMessageSentMsg': 'Your message has been sent.', 'contactFormMessageNotSentMsg': 'Message could not be sent. Please try again later.', 'contactFormInvalidEmailMsg': 'A valid email address is required.', 'contactFormEmptyMessageMsg': 'Message field cannot be empty.', 'title': 'Contact form', 'blogId': '8185307262457903059', 'contactFormNameMsg': 'Name', 'contactFormEmailMsg': 'Email', 'contactFormMessageMsg': 'Message', 'contactFormSendMsg': 'Send', 'submitUrl': 'https://www.blogger.com/contact-form.do'}, 'displayModeFull'));
 _WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList72', 'top-bar-nav', document.getElementById('LinkList72'), {}, 'displayModeFull'));
 </script>
-</body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 
-<!-- Mirrored from infinity-soratemplates.blogspot.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Apr 2021 18:24:53 GMT -->
+    <!-- register dialog modal -->
+    <div class="modal fade " id="register-modal" role="dialog">
+
+        <div class="modal-dialog bg-dark">
+            <div class="modal-header">
+                <button class="close text-primary" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <h4 class="text-primary">üye</h4>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="email adresinizi giriniz">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="şifreniz">
+                        </div>
+                        <div class="mt-2">
+                            <button type="reset" class="btn btn-danger">Ekranı Temizle</button>
+                            <button type="submit" class="btn btn-primary">Gönder</button>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+    $(function(){
+        $("#register-login").click(function(){
+    $("#register-modal").modal();
+        })
+    })
+    </script>
+    
+</body>
 </html>
