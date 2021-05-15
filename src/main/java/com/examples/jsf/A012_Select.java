@@ -8,6 +8,7 @@ import javax.inject.Named;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.ToString;
 import lombok.extern.java.Log;
 
 //cdi
@@ -17,24 +18,20 @@ import lombok.extern.java.Log;
 // lombok
 @Log
 @Data
+@ToString
 @AllArgsConstructor
 // @NoArgsConstructor
 public class A012_Select {
-
+	
 	// selectCheckbox
 	private boolean checkBool = true;
-
+	
 	// selectOneRadio
 	private String oneRadio;
-
+	
 	// selectOneMenu
 	private long secilenId;
-
-	// parametresiz constructor
-	public A012_Select() {
-		this.secilenId = 300; // defaulta seçili gelsin
-	}
-
+	
 	public List<ComputerDto> getComputerList() {
 		List<ComputerDto> computerDtoList = new ArrayList<>();
 		computerDtoList.add(new ComputerDto(100, "1asd", "1dddd"));
@@ -42,9 +39,26 @@ public class A012_Select {
 		computerDtoList.add(new ComputerDto(300, "3asd", "3dddd"));
 		return computerDtoList;
 	}
-
+	
 	public String selectMethod() {
 		log.info("eklendi");
 		return "Ders_012_select.xhtml?faces-redirect=true";
 	}
+	
+	////////////////////////////////////////////////////////////////////
+	// parametresiz constructor
+	public A012_Select() {
+		this.secilenId = 300; // defaulta secili gelsin
+		selectManyField[0] = "Servlet-1";
+		selectManyField[1] = "JSP-1";
+	}
+	
+	///////////////////////////////////////////////////////////////////
+	String[] selectManyField = new String[7];
+	
+	// selectManyCheckBox
+	public void selectManyCheckBoxMethod() {
+		
+	}
+	
 }

@@ -22,7 +22,8 @@
 		<h:panelGrid columns="3">
 			<!-- <h:selectBooleanCheckbox value="#{true}" /> Java -->
 			<h:selectBooleanCheckbox value="#{select.checkBool}" /> JSP
-<h:commandButton action="#{select.selectMethod()}" value="Gönder" />
+          <h:commandButton action="#{select.selectMethod()}"
+				value="Gönder" />
 		</h:panelGrid>
 		<h:outputText value="#{select.checkBool}" />
 	</h:form>
@@ -49,8 +50,33 @@
 		<h:commandButton action="#{select.selectMethod()}" value="Gönder" />
 		<h:outputText value="#{select.secilenId}" />
 	</h:form>
-	
-	
+	<hr />
+	<hr />
+	<hr />
+	<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<!-- 	selectMany -->
+	<h:form>
+		<h:selectManyCheckbox value="#{select.selectManyField}">
+			<f:selectItem itemLabel="Servlet" itemValue="Servlet-1" />
+			<f:selectItem itemLabel="JSP" itemValue="JSP-1" />
+			<f:selectItem itemLabel="JSF" itemValue="JSF-1" />
+			<f:selectItem itemLabel="Spring Framework"
+				itemValue="Spring Framework-1" />
+			<f:selectItem itemLabel="Spring Data" itemValue="Spring Data-1" />
+			<f:selectItem itemLabel="Spring Mvc" itemValue="Spring Mvc-1" />
+			<f:selectItem itemLabel="Spring Boot" itemValue="Spring Boot-1" />
+		</h:selectManyCheckbox>
+		<h:commandButton action="#{select.selectManyCheckBoxMethod()}"
+			value="Gönder" />
+	</h:form>
+
+	<ui:repeat var="takmaAd" value="#{select.selectManyField}">
+#{takmaAd.toUpperCase()}
+</ui:repeat>
+
+
+
+
 
 
 	<!-- Finish Codes -->
