@@ -24,12 +24,20 @@
 			value="Passing 1" />
 	</h:form>
 
+	<!-- Param-2 -->
 	<h:form>
 		<h:commandButton action="#{passing.passing2()}" value="Passing 2">
-			<f:param value="Hamit Mizrak" name="key"></f:param>
+			<f:param value="Hamit Mizrak" name="key2"></f:param>
 		</h:commandButton>
 	</h:form>
 
+	<!-- Param-3 -->
+	<h:form>
+		<h:commandButton  actionListener="#{passing.passing3}"
+			value="ActionListener Gönder">
+			<f:attribute name="key3" value="actionlistener ile gelen veri" />
+		</h:commandButton>
+	</h:form>
 
 
 	<!-- Finish Codes -->
