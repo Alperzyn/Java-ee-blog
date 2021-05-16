@@ -4,15 +4,23 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
 	version="2.2">
 
-
+	<!-- NAFtalin implicit navigation -->
 	<navigation-rule>
 		<description>tanimlama</description>
-
 		<from-view-id>/egitim/aDers_019_implicitNavigation.xhtml</from-view-id>
 		<navigation-case>
 			<from-outcome>sayfa2</from-outcome>
 			<to-view-id>/egitim/aDers_018_ajax.xhtml</to-view-id>
 		</navigation-case>
 	</navigation-rule>
-	
+
+	<!-- ARPA var resource bundle -->
+	<application>
+		<resource-bundle>
+			<description>all value</description>
+			<base-name>com.hamit.properties.turkce</base-name>
+			<var>ecodation</var>
+		</resource-bundle>
+	</application>
+
 </faces-config>
