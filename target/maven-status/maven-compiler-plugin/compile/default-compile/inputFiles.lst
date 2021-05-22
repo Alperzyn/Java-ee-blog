@@ -1,6 +1,6 @@
-C:\Users\Java Spring\eclipse28kasimJavaSE\BlogProject\src\main\java\com\hamit\controller\StudentController.java
-C:\Users\Java Spring\eclipse28kasimJavaSE\BlogProject\src\main\java\com\hamit\entity\Register.java
-C:\Users\Java Spring\eclipse28kasimJavaSE\BlogProject\src\main\java\com\hamit\interfaces\IDatabaseCrud.java
-C:\Users\Java Spring\eclipse28kasimJavaSE\BlogProject\src\main\java\com\hamit\dto\RegisterDto.java
-C:\Users\Java Spring\eclipse28kasimJavaSE\BlogProject\src\main\java\com\hamit\hibernateutils\PersistenceUtil.java
-C:\Users\Java Spring\eclipse28kasimJavaSE\BlogProject\src\main\java\com\hamit\hibernateutils\HibernateUtils.java
+C:\Users\Java Spring\git\Java-ee-blog\src\main\java\com\ecodation\util\HibernateUtils.java
+C:\Users\Java Spring\git\Java-ee-blog\src\main\java\com\ecodation\dto\SocialMediaDto.java
+C:\Users\Java Spring\git\Java-ee-blog\src\main\java\com\ecodation\service\impl\SocialMediaServiceImpl.java
+C:\Users\Java Spring\git\Java-ee-blog\src\main\java\com\ecodation\util\GenelAnotasyonlar.java
+C:\Users\Java Spring\git\Java-ee-blog\src\main\java\com\ecodation\entity\SocialMediaEntity.java
+C:\Users\Java Spring\git\Java-ee-blog\src\main\java\com\ecodation\service\IDatabaseService.java

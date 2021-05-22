@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#egitim#aDers_019_implicitNavigation.xhtml"
+  PATH="/egitim/aDers_019_implicitNavigation.xhtml" SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#egitim#aDers_019_implicitNavigation.xhtml:0"
+   NAME="item" PATH="/egitim/aDers_019_implicitNavigation.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="sayfa2::#egitim#aDers_018_ajax.xhtml"
+    NAME="output" PATH="/egitim/aDers_018_ajax.xhtml"
+    TARGET="rules:#egitim#aDers_018_ajax.xhtml" TITLE="sayfa2" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#egitim#aDers_018_ajax.xhtml"
+  PATH="/egitim/aDers_018_ajax.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

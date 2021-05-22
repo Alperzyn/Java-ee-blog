@@ -1,6 +1,6 @@
-com\hamit\dto\RegisterDto.class
-com\hamit\controller\StudentController.class
-com\hamit\hibernateutils\PersistenceUtil.class
-com\hamit\interfaces\IDatabaseCrud.class
-com\hamit\entity\Register.class
-com\hamit\hibernateutils\HibernateUtils.class
+com\ecodation\entity\SocialMediaEntity.class
+com\ecodation\dto\SocialMediaDto.class
+com\ecodation\service\impl\SocialMediaServiceImpl.class
+com\ecodation\service\IDatabaseService.class
+com\ecodation\util\GenelAnotasyonlar.class
+com\ecodation\util\HibernateUtils.class
